@@ -34,4 +34,4 @@ images/      photo and project screenshots
 
 ## Contact
 
-marzukalmad1143@gmail.com | [GitHub](https://github.com/O9SCARY) | [LinkedIn](https://www.linkedin.com/in/marzuk-almad-333194411)
+marzukalmad143@gmail.com | [GitHub](https://github.com/O9SCARY) | [LinkedIn](https://www.linkedin.com/in/marzuk-almad-333194411)
