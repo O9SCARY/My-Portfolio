@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Marzuk® | Computer Science Student & Full-Stack Developer</title>
+  <title>Marzuk®</title>
   <meta name="description" content="Marzuk Almad is a Computer Science student at the University of Ghana building fast, clean and responsive websites with HTML, CSS and JavaScript." />
   <meta property="og:title" content="Marzuk® | Full-Stack Developer" />
   <meta property="og:description" content="Fast, clean and responsive websites built with HTML, CSS and JavaScript." />
@@ -17,7 +17,6 @@
 </head>
 <body>
 
-  <!-- ============ NAVBAR ============ -->
   <header class="navbar" id="navbar">
     <a href="#hero" class="logo">Marzuk®</a>
 
@@ -72,21 +71,21 @@
           <img src="./assets/images/myself.jpg" alt="Marzuk Almad, Computer Science student and developer" />
         </div>
         <div class="floating-tag tag-one">&lt;/&gt; Frontend</div>
-        <div class="floating-tag tag-two">⚙ DevOps</div>
+        <div class="floating-tag tag-two">DevOps</div>
       </div>
     </section>
 
     <section class="marquee" aria-hidden="true">
       <div class="marquee-track">
-        <span>✧ HTML</span><span>✧ CSS</span><span>✧ JavaScript</span><span>✧ Python</span><span>✧ Java</span>
-        <span>✧ Git &amp; GitHub</span><span>✧ Figma</span><span>✧ Responsive Design</span><span>✧ CI/CD</span>
-        <span>✧ HTML</span><span>✧ CSS</span><span>✧ JavaScript</span><span>✧ Python</span><span>✧ Java</span>
-        <span>✧ Git &amp; GitHub</span><span>✧ Figma</span><span>✧ Responsive Design</span><span>✧ CI/CD</span>
+        <span>✧ HTML</span><span>CSS</span><span>✧ JavaScript</span><span>Python</span><span>Java</span>
+        <span>✧ Git &amp; GitHub</span><span>Figma</span><span>Responsive Design</span><span>CI/CD</span>
+        <span>✧ HTML</span><span>✧ CSS</span><span>JavaScript</span><span>Python</span><span>Java</span>
+        <span>✧ Git &amp; GitHub</span><span>Figma</span><span>Responsive Design</span><span>CI/CD</span>
       </div>
     </section>
 
     <section class="section" id="about">
-      <p class="section-label reveal">✧ About</p>
+      <p class="section-label reveal">About</p>
       <h2 class="section-title reveal">Okay, fine, here's my story</h2>
 
       <div class="about-grid">
@@ -145,7 +144,7 @@
     </section>
 
     <section class="section" id="works">
-      <p class="section-label reveal">✧ Projects</p>
+      <p class="section-label reveal">Projects</p>
       <h2 class="section-title reveal">Browse my projects</h2>
 
       <div class="filters reveal" id="filters">
@@ -158,7 +157,9 @@
       <div class="projects-grid" id="projectsGrid">
 
         <article class="project reveal" data-category="webapp">
-          <div class="project-visual visual-one"><span>PP</span></div>
+          <a href="https://protocol-restaurant.pages.dev" target="_blank" rel="noopener" class="project-visual">
+             <img src="./assets/images/protocol screenshot.png" alt="Protocol's Pizza and Restaurant homepage" loading="lazy" />
+          </a>
           <div class="project-body">
             <span class="project-number">01</span>
             <h3>Protocol's Pizza &amp; Restaurant</h3>
@@ -175,7 +176,9 @@
         </article>
 
         <article class="project reveal" data-category="landing">
-          <div class="project-visual visual-two"><span>LP</span></div>
+         <a href="https://o9scary.github.io/Landing-Page/" target="_blank" rel="noopener" class="project-visual">
+            <img src="./assets/images/landing-page.png" alt="Marzuk's practice landing page" loading="lazy" />
+         </a>
           <div class="project-body">
             <span class="project-number">02</span>
             <h3>Landing Page</h3>
@@ -192,7 +195,9 @@
         </article>
 
         <article class="project reveal" data-category="portfolio">
-          <div class="project-visual visual-three"><span>MZ</span></div>
+          <a href="https://o9scary.github.io/My-Portfolio/" target="_blank" rel="noopener" class="project-visual">
+            <img src="./assets/images/portfolio pic.png" alt="Marzuk's developer portfolio homepage" loading="lazy" />   
+          </a>
           <div class="project-body">
             <span class="project-number">03</span>
             <h3>Personal Portfolio</h3>
@@ -212,7 +217,7 @@
     </section>
 
     <section class="section" id="services">
-      <p class="section-label reveal">✧ Services</p>
+      <p class="section-label reveal">Services</p>
       <h2 class="section-title reveal">How I help</h2>
 
       <div class="services-grid">
@@ -265,45 +270,37 @@
     <section class="section contact" id="contact">
       <p class="section-label reveal">✧ Contact</p>
       <h2 class="section-title reveal">Let's work together!</h2>
-      <p class="contact-sub reveal">Have a project in mind or just want to say hi? Send a message and I'll get back to you.</p>
+      <p class="contact-sub reveal">Have a project in mind or just want to say hi? Reach out on any of these and I'll get back to you.</p>
 
-      <div class="contact-grid">
-        <form class="contact-form reveal" id="contactForm" novalidate>
-          <div class="field">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your name" required />
-          </div>
-          <div class="field">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="you@example.com" required />
-          </div>
-          <div class="field">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
-          </div>
-\
-          <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off" />
-          <button type="submit" class="btn btn-primary" id="submitBtn">Send Message</button>
-          <p class="form-status" id="formStatus" role="status"></p>
-        </form>
+      <div class="contact-icons reveal">
 
-        <div class="contact-info reveal">
-          <a href="mailto:marzukalmad1143@gmail.com?subject=New%20Project%20Inquiry" class="info-link">
-            <span>Email</span> marzukalmad1143@gmail.com
-          </a>
-          <a href="https://wa.me/233509952882" target="_blank" rel="noopener" class="info-link">
-            <span>WhatsApp</span> +233 50 995 2882
-          </a>
-          <a href="https://github.com/O9SCARY" target="_blank" rel="noopener" class="info-link">
-            <span>GitHub</span> github.com/O9SCARY
-          </a>
-          <a href="https://www.linkedin.com/in/marzuk-almad-333194411" target="_blank" rel="noopener" class="info-link">
-            <span>LinkedIn</span> Marzuk Almad
-          </a>
-        </div>
+        <a href="mailto:marzukalmad1143@gmail.com?subject=New%20Project%20Inquiry" class="icon-link" aria-label="Email Marzuk" title="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+            <path d="m3 7 9 6 9-6"></path>
+          </svg>
+        </a>
+
+        <a href="https://wa.me/233509952882" target="_blank" rel="noopener" class="icon-link" aria-label="Message Marzuk on WhatsApp" title="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 1.67c2.2 0 4.26.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.26-8.24Zm-3.2 4.4c-.17 0-.45.06-.68.31-.23.25-.9.88-.9 2.14 0 1.26.92 2.48 1.05 2.65.13.17 1.8 2.75 4.37 3.86 2.14.92 2.57.74 3.04.69.47-.04 1.5-.61 1.71-1.2.21-.6.21-1.1.15-1.2-.06-.11-.23-.17-.48-.3-.25-.13-1.5-.74-1.73-.82-.23-.09-.4-.13-.57.12-.17.25-.65.82-.8.99-.15.17-.3.19-.55.06-.25-.13-1.07-.39-2.03-1.25-.75-.67-1.26-1.5-1.4-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.3.38-.45.13-.15.17-.25.25-.42.09-.17.04-.32-.02-.45-.06-.13-.57-1.4-.78-1.91-.2-.5-.42-.43-.57-.44h-.49Z"/>
+          </svg>
+        </a>
+
+        <a href="https://www.linkedin.com/in/marzuk-almad-333194411" target="_blank" rel="noopener" class="icon-link" aria-label="Marzuk on LinkedIn" title="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/>
+          </svg>
+        </a>
+
+        <a href="https://github.com/O9SCARY" target="_blank" rel="noopener" class="icon-link" aria-label="Marzuk on GitHub" title="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.18 1.82 1.18 3.08 0 4.42-2.69 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/>
+          </svg>
+        </a>
+
       </div>
     </section>
-
   </main>
 
   <footer class="footer">
@@ -311,6 +308,6 @@
     <a href="#hero" class="back-top">Back to top ↑</a>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 </html>
