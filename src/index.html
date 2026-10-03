@@ -1,39 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Marzuk® | Computer Science Student & Full-Stack Developer</title>
+  <meta name="description" content="Marzuk Almad is a Computer Science student at the University of Ghana building fast, clean and responsive websites with HTML, CSS and JavaScript." />
+  <meta property="og:title" content="Marzuk® | Full-Stack Developer" />
+  <meta property="og:description" content="Fast, clean and responsive websites built with HTML, CSS and JavaScript." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0a0b10" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div id="headerDiv">
-        <header id="header">My Portfolio</header>
-        <div>
-            <a href="" class="header-buttons">ABOUT</a>
-            <a href="" class="header-buttons">STACK</a>
-            <a href="" class="header-buttons">PROJECTS</a>
-            <a href="" class="header-buttons">CONTACT</a>
-            <a href="" class="header-buttons">HIRE ME</a>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <a href="#hero" class="logo">Marzuk®</a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#hero" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#works" class="nav-link">Projects</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <a href="#contact" class="btn btn-primary nav-cta">Let's Talk</a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+
+    <section class="hero" id="hero">
+      <div class="hero-text">
+        <p class="eyebrow reveal">Computer Science Student · University of Ghana</p>
+        <h1 class="reveal">I build <span class="gradient-text">fast, clean</span> things for the web.</h1>
+        <p class="hero-sub reveal">
+          I'm Marzuk Almad, a full-stack developer in the making. I turn ideas into responsive,
+          readable and reliable websites using HTML, CSS and JavaScript.
+        </p>
+        <div class="hero-buttons reveal">
+          <a href="#works" class="btn btn-primary">View My Work</a>
+          <a href="#about" class="btn btn-ghost">About Me</a>
         </div>
-    </div>
-        
-    <h2>Marzuk</h2>
-    <h2>Almad</h2>
-    <h4>Full Stack Dev</h4>
-    <h5>● Ready To Work</h5>
-    <p>Creating and Developing the PERFECT software one step at a time.</p>
-    <p>Tech keeps Evolving and I evolve with it.</p>
-    <p>Passionate about computers and building.</p>
-    <p>I build, break and build it even better.</p>
 
-    <div id="about-butt">
-        <a href="" class="about-buttons">Get in Touch</a>
-        <a href="" class="about-buttons">View Works</a>
-    </div>
+        <div class="stats reveal">
+          <div class="stat">
+            <h3><span class="count" data-count="3">0</span>+</h3>
+            <p>Live projects</p>
+          </div>
+          <div class="stat">
+            <h3><span class="count" data-count="5">0</span></h3>
+            <p>Languages</p>
+          </div>
+          <div class="stat">
+            <h3><span class="count" data-count="4">0</span></h3>
+            <p>Core tools</p>
+          </div>
+        </div>
+      </div>
 
+      <div class="hero-photo reveal">
+        <div class="photo-frame">
+          <img src="./assets/images/myself.jpg" alt="Marzuk Almad, Computer Science student and developer" />
+        </div>
+        <div class="floating-tag tag-one">&lt;/&gt; Frontend</div>
+        <div class="floating-tag tag-two">⚙ DevOps</div>
+      </div>
+    </section>
 
+    <section class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>✧ HTML</span><span>✧ CSS</span><span>✧ JavaScript</span><span>✧ Python</span><span>✧ Java</span>
+        <span>✧ Git &amp; GitHub</span><span>✧ Figma</span><span>✧ Responsive Design</span><span>✧ CI/CD</span>
+        <span>✧ HTML</span><span>✧ CSS</span><span>✧ JavaScript</span><span>✧ Python</span><span>✧ Java</span>
+        <span>✧ Git &amp; GitHub</span><span>✧ Figma</span><span>✧ Responsive Design</span><span>✧ CI/CD</span>
+      </div>
+    </section>
 
-    <script src="js/script.js"></script>
+    <section class="section" id="about">
+      <p class="section-label reveal">✧ About</p>
+      <h2 class="section-title reveal">Okay, fine, here's my story</h2>
+
+      <div class="about-grid">
+        <div class="about-bio reveal">
+          <p>
+            I'm a Computer Science undergraduate at the University of Ghana who loves turning
+            ideas into websites people actually enjoy using. I work mainly with HTML, CSS and
+            JavaScript, and I'm steadily growing in Python and Java.
+          </p>
+          <p>
+            I've worked in a team to build a real restaurant ordering system, where I led DevOps:
+            repository setup, CI/CD pipelines and architecture documentation. I care about code
+            that's readable, responsive on any screen, and ready to ship.
+          </p>
+        </div>
+
+        <div class="about-cards">
+          <article class="card reveal">
+            <h4>Built to Ship</h4>
+            <p>A project isn't done when it runs on my laptop. It's done when real people can use it.</p>
+          </article>
+          <article class="card reveal">
+            <h4>Detail-Oriented</h4>
+            <p>Awkward spacing, a button that's off by a few pixels, a layout that breaks on mobile. I notice them all.</p>
+          </article>
+          <article class="card reveal">
+            <h4>Always Learning</h4>
+            <p>Between lectures and side projects, there's always one more concept to understand properly.</p>
+          </article>
+          <article class="card reveal">
+            <h4>Team Player</h4>
+            <p>I enjoy collaborating, reviewing code and fixing things so the whole team moves faster.</p>
+          </article>
+        </div>
+      </div>
+
+      <h3 class="subheading reveal">Tools I live in</h3>
+      <div class="tools reveal">
+        <div class="tool">
+          <h4>HTML, CSS &amp; JavaScript</h4>
+          <p>Where every interface I build begins: structure, style and behaviour.</p>
+        </div>
+        <div class="tool">
+          <h4>Python &amp; Java</h4>
+          <p>For problem solving, algorithms and the foundations behind the code.</p>
+        </div>
+        <div class="tool">
+          <h4>VS Code, Git &amp; GitHub</h4>
+          <p>My daily workspace for writing, versioning and collaborating on code.</p>
+        </div>
+        <div class="tool">
+          <h4>Figma</h4>
+          <p>Where layouts get planned before a single line of code is written.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="works">
+      <p class="section-label reveal">✧ Projects</p>
+      <h2 class="section-title reveal">Browse my projects</h2>
+
+      <div class="filters reveal" id="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="webapp">Web App</button>
+        <button class="filter-btn" data-filter="landing">Landing Page</button>
+        <button class="filter-btn" data-filter="portfolio">Portfolio</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <article class="project reveal" data-category="webapp">
+          <div class="project-visual visual-one"><span>PP</span></div>
+          <div class="project-body">
+            <span class="project-number">01</span>
+            <h3>Protocol's Pizza &amp; Restaurant</h3>
+            <p class="project-type">Web Ordering System · Team Project</p>
+            <p>
+              A food ordering web app built for a real restaurant: dynamic menu, persistent cart,
+              checkout flow and a fully responsive interface, with CI/CD set up for reliable releases.
+            </p>
+            <ul class="chips"><li>JavaScript</li><li>Node.js</li><li>Express</li><li>MySQL</li></ul>
+            <div class="project-links">
+              <a href="https://protocol-restaurant.pages.dev" target="_blank" rel="noopener" class="link-arrow">Live Site ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project reveal" data-category="landing">
+          <div class="project-visual visual-two"><span>LP</span></div>
+          <div class="project-body">
+            <span class="project-number">02</span>
+            <h3>Landing Page</h3>
+            <p class="project-type">Frontend Practice · Solo Project</p>
+            <p>
+              A clean, responsive landing page built to sharpen my layout, styling and
+              interaction skills using only HTML, CSS and JavaScript.
+            </p>
+            <ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <div class="project-links">
+              <a href="https://o9scary.github.io/Landing-Page/" target="_blank" rel="noopener" class="link-arrow">Live Site ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project reveal" data-category="portfolio">
+          <div class="project-visual visual-three"><span>MZ</span></div>
+          <div class="project-body">
+            <span class="project-number">03</span>
+            <h3>Personal Portfolio</h3>
+            <p class="project-type">Portfolio Website · Solo Project</p>
+            <p>
+              The site you're on right now: a single-page developer portfolio with animated
+              sections, project filters and a working contact form, all in vanilla code.
+            </p>
+            <ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <div class="project-links">
+              <a href="https://o9scary.github.io/My-Portfolio/" target="_blank" rel="noopener" class="link-arrow">Live Site ↗</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <p class="section-label reveal">✧ Services</p>
+      <h2 class="section-title reveal">How I help</h2>
+
+      <div class="services-grid">
+        <article class="service reveal">
+          <span class="service-number">01</span>
+          <h3>Web Development</h3>
+          <p>Building fast, accessible websites and web apps from scratch using clean, maintainable HTML, CSS and JavaScript.</p>
+        </article>
+        <article class="service reveal">
+          <span class="service-number">02</span>
+          <h3>Landing Pages</h3>
+          <p>Focused, good-looking pages for businesses, events and products that explain your offer and get people to act.</p>
+        </article>
+        <article class="service reveal">
+          <span class="service-number">03</span>
+          <h3>Responsive Design</h3>
+          <p>Turning designs into layouts that look and work right on phones, tablets and desktops.</p>
+        </article>
+        <article class="service reveal">
+          <span class="service-number">04</span>
+          <h3>Git &amp; Project Setup</h3>
+          <p>Repository structure, GitHub workflows and CI/CD basics so your project stays organised and easy to ship.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="process">
+      <p class="section-label reveal">✧ Process</p>
+      <h2 class="section-title reveal">How it works</h2>
+
+      <div class="process-grid">
+        <div class="step reveal">
+          <span class="step-number">01</span>
+          <h3>Understand</h3>
+          <p>Getting clear on your goals, your audience and what the project really needs.</p>
+        </div>
+        <div class="step reveal">
+          <span class="step-number">02</span>
+          <h3>Build</h3>
+          <p>Turning the plan into clean, responsive code, with regular check-ins along the way.</p>
+        </div>
+        <div class="step reveal">
+          <span class="step-number">03</span>
+          <h3>Ship</h3>
+          <p>Testing, refining and launching it live so it's ready for real users.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <p class="section-label reveal">✧ Contact</p>
+      <h2 class="section-title reveal">Let's work together!</h2>
+      <p class="contact-sub reveal">Have a project in mind or just want to say hi? Send a message and I'll get back to you.</p>
+
+      <div class="contact-grid">
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+\
+          <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off" />
+          <button type="submit" class="btn btn-primary" id="submitBtn">Send Message</button>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+
+        <div class="contact-info reveal">
+          <a href="mailto:marzukalmad1143@gmail.com?subject=New%20Project%20Inquiry" class="info-link">
+            <span>Email</span> marzukalmad1143@gmail.com
+          </a>
+          <a href="https://wa.me/233509952882" target="_blank" rel="noopener" class="info-link">
+            <span>WhatsApp</span> +233 50 995 2882
+          </a>
+          <a href="https://github.com/O9SCARY" target="_blank" rel="noopener" class="info-link">
+            <span>GitHub</span> github.com/O9SCARY
+          </a>
+          <a href="https://www.linkedin.com/in/marzuk-almad-333194411" target="_blank" rel="noopener" class="info-link">
+            <span>LinkedIn</span> Marzuk Almad
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year">2026</span> Marzuk Almad. All rights reserved.</p>
+    <a href="#hero" class="back-top">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
